@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Desafio Calculo</title>
+			
+</head>
+<body>
+	<div>
+		<h1>Calculadora</h1>
+	</div>
+
+	</body>
+<script>
+		var primeiroNumero = prompt('Digite um Número'); 
+		var operacao = prompt('Qual operação deseja realizar? (Digite + ou - ou * ou /');
+		var segundoNumero = prompt('Digite um Número');
+		var resultadoOperacao = 0;
+
+		
+		if (operacao == '+')
+			resultadoOperacao = soma(primeiroNumero, segundoNumero);
+		
+		if (operacao == '-')
+			resultadoOperacao = diminui(primeiroNumero, segundoNumero);
+		
+		if (operacao == '*')
+			resultadoOperacao = multiplica(primeiroNumero, segundoNumero);
+		
+		if (operacao == '/')
+			resultadoOperacao = divide(primeiroNumero, segundoNumero);
+
+		function soma(primeiroNumero, segundoNumero) {
+			return parseInt(primeiroNumero) + parseInt(segundoNumero);
+		}
+
+		function diminui(primeiroNumero, segundoNumero) {
+			return parseInt(primeiroNumero) - parseInt(segundoNumero);
+		}
+
+		function multiplica(primeiroNumero, segundoNumero) {
+			return parseInt(primeiroNumero) * parseInt(segundoNumero);
+		}
+
+		function divide(primeiroNumero, segundoNumero) {
+			return parseInt(primeiroNumero) / parseInt(segundoNumero);
+		}
+
+		alert('O resultado é: ' + resultadoOperacao); 
+
+		</script>
+</html>
